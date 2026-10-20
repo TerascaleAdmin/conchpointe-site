@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conch Pointe Beach Resort | West Bay, Grand Cayman</title>
+<meta name="description" content="Conch Pointe Beach Resort, a small beachfront community at 243 Conch Point Rd, West Bay, Grand Cayman.">
+<link rel="preload" as="image" href="img/beach1.jpg">
+<style>
+  :root {
+    --sand: #faf6ee;
+    --ink: #1f2a33;
+    --muted: #5d6b75;
+    --accent: #b4532a;
+    --rule: #e6dccb;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0;
+    background: var(--sand);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); }
+  .hero {
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    background: #2b3a45;
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+  }
+  .slide.on { opacity: 1; }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.05) 35%, rgba(0,0,0,.6) 100%);
+  }
+  .hero-text { position: relative; z-index: 1; width: 100%; max-width: 54rem; margin: 0 auto; padding: 0 16px 56px; }
+  h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 .25em; font-weight: normal; letter-spacing: .01em; text-shadow: 0 2px 14px rgba(0,0,0,.45); }
+  .tag { margin: 0; font-size: 1.15rem; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
+  .dots { position: absolute; z-index: 2; right: 16px; bottom: 16px; display: flex; gap: 8px; }
+  .dots button { width: 12px; height: 12px; padding: 0; border-radius: 50%; border: 1px solid #fff; background: transparent; cursor: pointer; }
+  .dots button[aria-current="true"] { background: #fff; }
+  .info { padding: 48px 16px 56px; }
+  .wrap { max-width: 54rem; margin: 0 auto; }
+  .blocks { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 32px; }
+  .block h2 { margin: 0 0 8px; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-family: system-ui, sans-serif; font-weight: 600; }
+  .block p { margin: 0; }
+  address { font-style: normal; }
+  .policies { margin-top: 44px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  summary { cursor: pointer; font-family: system-ui, sans-serif; font-weight: 600; font-size: .95rem; }
+  .policies ul { padding-left: 1.2em; margin: 16px 0 0; }
+  .policies li { margin-bottom: .7em; }
+  .policies small { color: var(--muted); display: block; margin-top: 16px; }
+  footer { padding: 0 16px 36px; color: var(--muted); font-size: .85rem; font-family: system-ui, sans-serif; }
+  @media (prefers-reduced-motion: reduce) { .slide { transition: none; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="slide on" style="background-image:url('img/beach1.jpg')"></div>
+  <div class="slide" data-src="img/beach2.jpg"></div>
+  <div class="slide" data-src="img/beach3.jpg"></div>
+  <div class="hero-text">
+    <h1>Conch Pointe Beach Resort</h1>
+    <p class="tag">West Bay, Grand Cayman</p>
+  </div>
+  <div class="dots" aria-label="Photo selector"></div>
+</header>
+<main class="info">
+  <div class="wrap">
+    <div class="blocks">
+      <section class="block">
+        <h2>Who we are</h2>
+        <p>We are a small beachfront community in West Bay, Grand Cayman.</p>
+      </section>
+      <section class="block">
+        <h2>Where we are</h2>
+        <address>
+          Conch Pointe Beach Resort<br>
+          243 Conch Point Rd<br>
+          West Bay, Grand Cayman<br>
+          <a href="https://www.openstreetmap.org/search?query=243%20Conch%20Point%20Rd%2C%20West%20Bay%2C%20Grand%20Cayman">View on a map</a>
+        </address>
+      </section>
+      <section class="block">
+        <h2>Contact</h2>
+        <p>Email us at <a href="mailto:conchpointe@gmail.com">conchpointe@gmail.com</a></p>
+      </section>
+    </div>
+
+    <details class="policies">
+      <summary>General guest policies</summary>
+      <ul>
+        <li><strong>Noise.</strong> Guests shall not engage in noisy, rowdy, or raucous behavior, nor any behavior or noise which disturbs the comfort and quiet enjoyment of other proprietors.</li>
+        <li><strong>Outdoor fires.</strong> Pursuant to the laws of the Cayman Islands, please note that open outdoor bonfires are not allowed. Fireworks are not permitted without permission of the owners.</li>
+        <li><strong>Fishing and catching.</strong> Fishing and the catching of marine life is heavily regulated in the Cayman Islands. Prior to conducting any of these activities, we recommend you review the <a href="http://doe.ky/conservation-law/marine-park-regulations-maps-and-conservation-laws/">marine park regulations</a> carefully.</li>
+        <li><strong>Visitors.</strong> Any persons who are granted access to the Property during your stay are your sole responsibility. No persons other than those in the registered rental party may stay overnight at the Property. No events (a gathering involving more than 10 outside guests) should be held without prior permission of the Property (unit) owner.</li>
+        <li><strong>Pets.</strong> Dogs or pets are not allowed in the common areas unless on a leash always and any animal discharge must be collected with a plastic bag and placed in the dumpster.</li>
+        <li><strong>Common areas.</strong> The gym and tennis court are available for guest use. When the gym is not in use, please turn off lights and fans, leave the air conditioning set at a reasonable level (80 degrees) and ensure the doors are securely locked. Children under 18 cannot use the gym without adult supervision. All furniture, hammocks and watercraft on the beach are privately owned &ndash; do not use without owners&rsquo; permission. Please park in the unit driveways; parking in the common areas is limited and needed for maintenance personnel. All garbage should be placed in the dumpster (near exit gate).</li>
+      </ul>
+      <small>Current as of 19 June, 2019</small>
+    </details>
+  </div>
+</main>
+<footer>
+  <div class="wrap">&copy; 2026 Conch Pointe Beach Resort</div>
+</footer>
+<script>
+(function () {
+  var slides = document.querySelectorAll('.slide');
+  var dotBox = document.querySelector('.dots');
+  var i = 0, timer = null;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  slides.forEach(function (s, n) {
+    var b = document.createElement('button');
+    b.setAttribute('aria-label', 'Show photo ' + (n + 1));
+    b.addEventListener('click', function () { show(n); restart(); });
+    dotBox.appendChild(b);
+  });
+  function load(s) {
+    if (s.dataset.src) { s.style.backgroundImage = "url('" + s.dataset.src + "')"; delete s.dataset.src; }
+  }
+  function show(n) {
+    i = (n + slides.length) % slides.length;
+    load(slides[i]);
+    slides.forEach(function (s, k) { s.classList.toggle('on', k === i); });
+    dotBox.querySelectorAll('button').forEach(function (b, k) { b.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+  }
+  function restart() {
+    clearInterval(timer);
+    if (!reduce) timer = setInterval(function () { show(i + 1); }, 6500);
+  }
+  window.addEventListener('load', function () { slides.forEach(load); });  // warm the cache after first paint
+  show(0); restart();
+})();
+</script>
+</body>
+</html>
